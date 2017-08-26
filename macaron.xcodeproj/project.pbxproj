@@ -13,6 +13,8 @@
 		775DB6771F5158F500AEC8A9 /* MacaronCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775DB6761F5158F500AEC8A9 /* MacaronCell.swift */; };
 		775DB67B1F51599300AEC8A9 /* MacaronInputCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775DB67A1F51599300AEC8A9 /* MacaronInputCellType.swift */; };
 		77D98A621F51701300E2943B /* MacaronCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D98A611F51701300E2943B /* MacaronCellType.swift */; };
+		77D98A651F51710C00E2943B /* MacaronData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D98A641F51710C00E2943B /* MacaronData.swift */; };
+		77D98A671F51713E00E2943B /* MacaronInputData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D98A661F51713E00E2943B /* MacaronInputData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 		775DB6761F5158F500AEC8A9 /* MacaronCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacaronCell.swift; sourceTree = "<group>"; };
 		775DB67A1F51599300AEC8A9 /* MacaronInputCellType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacaronInputCellType.swift; sourceTree = "<group>"; };
 		77D98A611F51701300E2943B /* MacaronCellType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacaronCellType.swift; sourceTree = "<group>"; };
+		77D98A641F51710C00E2943B /* MacaronData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacaronData.swift; sourceTree = "<group>"; };
+		77D98A661F51713E00E2943B /* MacaronInputData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacaronInputData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		775DB6541F51580C00AEC8A9 /* macaron */ = {
 			isa = PBXGroup;
 			children = (
+				77D98A631F51708000E2943B /* Data */,
 				775DB6751F5158C300AEC8A9 /* View */,
 				775DB6551F51580C00AEC8A9 /* macaron.h */,
 				775DB6561F51580C00AEC8A9 /* Info.plist */,
@@ -101,6 +106,15 @@
 				775DB67A1F51599300AEC8A9 /* MacaronInputCellType.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		77D98A631F51708000E2943B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				77D98A641F51710C00E2943B /* MacaronData.swift */,
+				77D98A661F51713E00E2943B /* MacaronInputData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,7 +231,9 @@
 			files = (
 				775DB6771F5158F500AEC8A9 /* MacaronCell.swift in Sources */,
 				775DB67B1F51599300AEC8A9 /* MacaronInputCellType.swift in Sources */,
+				77D98A651F51710C00E2943B /* MacaronData.swift in Sources */,
 				77D98A621F51701300E2943B /* MacaronCellType.swift in Sources */,
+				77D98A671F51713E00E2943B /* MacaronInputData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
