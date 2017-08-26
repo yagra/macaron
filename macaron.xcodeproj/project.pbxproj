@@ -10,6 +10,9 @@
 		775DB65C1F51580C00AEC8A9 /* macaron.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 775DB6521F51580C00AEC8A9 /* macaron.framework */; };
 		775DB6611F51580C00AEC8A9 /* macaronTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775DB6601F51580C00AEC8A9 /* macaronTests.swift */; };
 		775DB6631F51580C00AEC8A9 /* macaron.h in Headers */ = {isa = PBXBuildFile; fileRef = 775DB6551F51580C00AEC8A9 /* macaron.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		775DB6771F5158F500AEC8A9 /* MacaronCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775DB6761F5158F500AEC8A9 /* MacaronCell.swift */; };
+		775DB67B1F51599300AEC8A9 /* MacaronInputCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775DB67A1F51599300AEC8A9 /* MacaronInputCellType.swift */; };
+		77D98A621F51701300E2943B /* MacaronCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D98A611F51701300E2943B /* MacaronCellType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		775DB65B1F51580C00AEC8A9 /* macaronTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = macaronTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		775DB6601F51580C00AEC8A9 /* macaronTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macaronTests.swift; sourceTree = "<group>"; };
 		775DB6621F51580C00AEC8A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		775DB6761F5158F500AEC8A9 /* MacaronCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacaronCell.swift; sourceTree = "<group>"; };
+		775DB67A1F51599300AEC8A9 /* MacaronInputCellType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacaronInputCellType.swift; sourceTree = "<group>"; };
+		77D98A611F51701300E2943B /* MacaronCellType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacaronCellType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,7 @@
 		775DB6541F51580C00AEC8A9 /* macaron */ = {
 			isa = PBXGroup;
 			children = (
+				775DB6751F5158C300AEC8A9 /* View */,
 				775DB6551F51580C00AEC8A9 /* macaron.h */,
 				775DB6561F51580C00AEC8A9 /* Info.plist */,
 			);
@@ -84,6 +91,16 @@
 				775DB6621F51580C00AEC8A9 /* Info.plist */,
 			);
 			path = macaronTests;
+			sourceTree = "<group>";
+		};
+		775DB6751F5158C300AEC8A9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				775DB6761F5158F500AEC8A9 /* MacaronCell.swift */,
+				77D98A611F51701300E2943B /* MacaronCellType.swift */,
+				775DB67A1F51599300AEC8A9 /* MacaronInputCellType.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +215,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				775DB6771F5158F500AEC8A9 /* MacaronCell.swift in Sources */,
+				775DB67B1F51599300AEC8A9 /* MacaronInputCellType.swift in Sources */,
+				77D98A621F51701300E2943B /* MacaronCellType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
