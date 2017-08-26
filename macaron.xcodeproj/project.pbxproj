@@ -18,6 +18,7 @@
 		77D98A621F51701300E2943B /* MacaronCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D98A611F51701300E2943B /* MacaronCellType.swift */; };
 		77D98A651F51710C00E2943B /* MacaronCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D98A641F51710C00E2943B /* MacaronCellData.swift */; };
 		77D98A671F51713E00E2943B /* MacaronInputCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D98A661F51713E00E2943B /* MacaronInputCellData.swift */; };
+		77D98A691F517A3C00E2943B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D98A681F517A3C00E2943B /* Config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		77D98A611F51701300E2943B /* MacaronCellType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacaronCellType.swift; sourceTree = "<group>"; };
 		77D98A641F51710C00E2943B /* MacaronCellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacaronCellData.swift; sourceTree = "<group>"; };
 		77D98A661F51713E00E2943B /* MacaronInputCellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacaronInputCellData.swift; sourceTree = "<group>"; };
+		77D98A681F517A3C00E2943B /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		775DB6541F51580C00AEC8A9 /* macaron */ = {
 			isa = PBXGroup;
 			children = (
+				77D98A681F517A3C00E2943B /* Config.swift */,
 				775DB67F1F515A8F00AEC8A9 /* MacaronManageable.swift */,
 				77D98A631F51708000E2943B /* Data */,
 				775DB6751F5158C300AEC8A9 /* View */,
@@ -245,6 +248,7 @@
 				77D98A651F51710C00E2943B /* MacaronCellData.swift in Sources */,
 				775DB67E1F515A1900AEC8A9 /* TextInputCell.swift in Sources */,
 				775DB6801F515A8F00AEC8A9 /* MacaronManageable.swift in Sources */,
+				77D98A691F517A3C00E2943B /* Config.swift in Sources */,
 				77D98A621F51701300E2943B /* MacaronCellType.swift in Sources */,
 				77D98A671F51713E00E2943B /* MacaronInputCellData.swift in Sources */,
 			);

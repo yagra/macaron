@@ -18,7 +18,7 @@ public extension MacaronManageable where Self: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         for cell in Set(cellData.map{$0.cellClassName}) {
-            tableView.register(UINib(nibName: cell, bundle: nil), forCellReuseIdentifier: cell)
+            tableView.register(UINib(nibName: cell, bundle: Config.MacaronBundle), forCellReuseIdentifier: cell)
         }
     }
 
