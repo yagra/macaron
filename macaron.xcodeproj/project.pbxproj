@@ -1,0 +1,417 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		775DB65C1F51580C00AEC8A9 /* macaron.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 775DB6521F51580C00AEC8A9 /* macaron.framework */; };
+		775DB6611F51580C00AEC8A9 /* macaronTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775DB6601F51580C00AEC8A9 /* macaronTests.swift */; };
+		775DB6631F51580C00AEC8A9 /* macaron.h in Headers */ = {isa = PBXBuildFile; fileRef = 775DB6551F51580C00AEC8A9 /* macaron.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		775DB65D1F51580C00AEC8A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 775DB6491F51580C00AEC8A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 775DB6511F51580C00AEC8A9;
+			remoteInfo = macaron;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		775DB6521F51580C00AEC8A9 /* macaron.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = macaron.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		775DB6551F51580C00AEC8A9 /* macaron.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = macaron.h; sourceTree = "<group>"; };
+		775DB6561F51580C00AEC8A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		775DB65B1F51580C00AEC8A9 /* macaronTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = macaronTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		775DB6601F51580C00AEC8A9 /* macaronTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macaronTests.swift; sourceTree = "<group>"; };
+		775DB6621F51580C00AEC8A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		775DB64E1F51580C00AEC8A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		775DB6581F51580C00AEC8A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				775DB65C1F51580C00AEC8A9 /* macaron.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		775DB6481F51580C00AEC8A9 = {
+			isa = PBXGroup;
+			children = (
+				775DB6541F51580C00AEC8A9 /* macaron */,
+				775DB65F1F51580C00AEC8A9 /* macaronTests */,
+				775DB6531F51580C00AEC8A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		775DB6531F51580C00AEC8A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				775DB6521F51580C00AEC8A9 /* macaron.framework */,
+				775DB65B1F51580C00AEC8A9 /* macaronTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		775DB6541F51580C00AEC8A9 /* macaron */ = {
+			isa = PBXGroup;
+			children = (
+				775DB6551F51580C00AEC8A9 /* macaron.h */,
+				775DB6561F51580C00AEC8A9 /* Info.plist */,
+			);
+			path = macaron;
+			sourceTree = "<group>";
+		};
+		775DB65F1F51580C00AEC8A9 /* macaronTests */ = {
+			isa = PBXGroup;
+			children = (
+				775DB6601F51580C00AEC8A9 /* macaronTests.swift */,
+				775DB6621F51580C00AEC8A9 /* Info.plist */,
+			);
+			path = macaronTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		775DB64F1F51580C00AEC8A9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				775DB6631F51580C00AEC8A9 /* macaron.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		775DB6511F51580C00AEC8A9 /* macaron */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 775DB6661F51580C00AEC8A9 /* Build configuration list for PBXNativeTarget "macaron" */;
+			buildPhases = (
+				775DB64D1F51580C00AEC8A9 /* Sources */,
+				775DB64E1F51580C00AEC8A9 /* Frameworks */,
+				775DB64F1F51580C00AEC8A9 /* Headers */,
+				775DB6501F51580C00AEC8A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = macaron;
+			productName = macaron;
+			productReference = 775DB6521F51580C00AEC8A9 /* macaron.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		775DB65A1F51580C00AEC8A9 /* macaronTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 775DB6691F51580C00AEC8A9 /* Build configuration list for PBXNativeTarget "macaronTests" */;
+			buildPhases = (
+				775DB6571F51580C00AEC8A9 /* Sources */,
+				775DB6581F51580C00AEC8A9 /* Frameworks */,
+				775DB6591F51580C00AEC8A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				775DB65E1F51580C00AEC8A9 /* PBXTargetDependency */,
+			);
+			name = macaronTests;
+			productName = macaronTests;
+			productReference = 775DB65B1F51580C00AEC8A9 /* macaronTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		775DB6491F51580C00AEC8A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = yagra;
+				TargetAttributes = {
+					775DB6511F51580C00AEC8A9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 4JH8FU8Y5R;
+						ProvisioningStyle = Automatic;
+					};
+					775DB65A1F51580C00AEC8A9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 4JH8FU8Y5R;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 775DB64C1F51580C00AEC8A9 /* Build configuration list for PBXProject "macaron" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 775DB6481F51580C00AEC8A9;
+			productRefGroup = 775DB6531F51580C00AEC8A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				775DB6511F51580C00AEC8A9 /* macaron */,
+				775DB65A1F51580C00AEC8A9 /* macaronTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		775DB6501F51580C00AEC8A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		775DB6591F51580C00AEC8A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		775DB64D1F51580C00AEC8A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		775DB6571F51580C00AEC8A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				775DB6611F51580C00AEC8A9 /* macaronTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		775DB65E1F51580C00AEC8A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 775DB6511F51580C00AEC8A9 /* macaron */;
+			targetProxy = 775DB65D1F51580C00AEC8A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		775DB6641F51580C00AEC8A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		775DB6651F51580C00AEC8A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		775DB6671F51580C00AEC8A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4JH8FU8Y5R;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = macaron/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tokyo.yagra.macaron;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		775DB6681F51580C00AEC8A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4JH8FU8Y5R;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = macaron/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tokyo.yagra.macaron;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		775DB66A1F51580C00AEC8A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4JH8FU8Y5R;
+				INFOPLIST_FILE = macaronTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tokyo.yagra.macaronTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		775DB66B1F51580C00AEC8A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4JH8FU8Y5R;
+				INFOPLIST_FILE = macaronTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tokyo.yagra.macaronTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		775DB64C1F51580C00AEC8A9 /* Build configuration list for PBXProject "macaron" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				775DB6641F51580C00AEC8A9 /* Debug */,
+				775DB6651F51580C00AEC8A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		775DB6661F51580C00AEC8A9 /* Build configuration list for PBXNativeTarget "macaron" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				775DB6671F51580C00AEC8A9 /* Debug */,
+				775DB6681F51580C00AEC8A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		775DB6691F51580C00AEC8A9 /* Build configuration list for PBXNativeTarget "macaronTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				775DB66A1F51580C00AEC8A9 /* Debug */,
+				775DB66B1F51580C00AEC8A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 775DB6491F51580C00AEC8A9 /* Project object */;
+}
