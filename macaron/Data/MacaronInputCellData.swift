@@ -15,7 +15,7 @@ public protocol MacaronInputCellDataType: MacaronCellDataType {
 public class MacaronInputCellData<C: MacaronInputCellType>: MacaronCellData<C>, MacaronInputCellDataType {
     public var labelText: String
 
-    init(labelText: String) {
+    public init(labelText: String) {
         self.labelText = labelText
     }
 }
