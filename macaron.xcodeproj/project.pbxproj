@@ -189,6 +189,7 @@
 					775DB6511F51580C00AEC8A9 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 4JH8FU8Y5R;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					775DB65A1F51580C00AEC8A9 = {
@@ -372,6 +373,7 @@
 		775DB6671F51580C00AEC8A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4JH8FU8Y5R;
@@ -384,6 +386,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tokyo.yagra.macaron;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -391,6 +394,7 @@
 		775DB6681F51580C00AEC8A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4JH8FU8Y5R;
@@ -410,6 +414,7 @@
 		775DB66A1F51580C00AEC8A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 4JH8FU8Y5R;
 				INFOPLIST_FILE = macaronTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -422,6 +427,7 @@
 		775DB66B1F51580C00AEC8A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 4JH8FU8Y5R;
 				INFOPLIST_FILE = macaronTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -450,6 +456,7 @@
 				775DB6681F51580C00AEC8A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		775DB6691F51580C00AEC8A9 /* Build configuration list for PBXNativeTarget "macaronTests" */ = {
 			isa = XCConfigurationList;
@@ -458,6 +465,7 @@
 				775DB66B1F51580C00AEC8A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
