@@ -8,11 +8,11 @@
 
 import Foundation
 
-public protocol MacaronDataType {
+public protocol MacaronCellDataType {
     var cellClassName: String { get }
 }
 
-public class MacaronData<C: MacaronCellType>: MacaronDataType {
+public class MacaronCellData<C: MacaronCellType>: MacaronCellDataType {
     public var cellClassName: String {
         get {
             return String(describing: C.self)

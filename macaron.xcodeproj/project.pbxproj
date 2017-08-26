@@ -16,8 +16,8 @@
 		775DB6801F515A8F00AEC8A9 /* MacaronManageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775DB67F1F515A8F00AEC8A9 /* MacaronManageable.swift */; };
 		77D98A5C1F51648300E2943B /* TextInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77D98A5B1F51648300E2943B /* TextInputCell.xib */; };
 		77D98A621F51701300E2943B /* MacaronCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D98A611F51701300E2943B /* MacaronCellType.swift */; };
-		77D98A651F51710C00E2943B /* MacaronData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D98A641F51710C00E2943B /* MacaronData.swift */; };
-		77D98A671F51713E00E2943B /* MacaronInputData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D98A661F51713E00E2943B /* MacaronInputData.swift */; };
+		77D98A651F51710C00E2943B /* MacaronCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D98A641F51710C00E2943B /* MacaronCellData.swift */; };
+		77D98A671F51713E00E2943B /* MacaronInputCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D98A661F51713E00E2943B /* MacaronInputCellData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +43,8 @@
 		775DB67F1F515A8F00AEC8A9 /* MacaronManageable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacaronManageable.swift; sourceTree = "<group>"; };
 		77D98A5B1F51648300E2943B /* TextInputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextInputCell.xib; sourceTree = "<group>"; };
 		77D98A611F51701300E2943B /* MacaronCellType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacaronCellType.swift; sourceTree = "<group>"; };
-		77D98A641F51710C00E2943B /* MacaronData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacaronData.swift; sourceTree = "<group>"; };
-		77D98A661F51713E00E2943B /* MacaronInputData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacaronInputData.swift; sourceTree = "<group>"; };
+		77D98A641F51710C00E2943B /* MacaronCellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacaronCellData.swift; sourceTree = "<group>"; };
+		77D98A661F51713E00E2943B /* MacaronInputCellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacaronInputCellData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +120,8 @@
 		77D98A631F51708000E2943B /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				77D98A641F51710C00E2943B /* MacaronData.swift */,
-				77D98A661F51713E00E2943B /* MacaronInputData.swift */,
+				77D98A641F51710C00E2943B /* MacaronCellData.swift */,
+				77D98A661F51713E00E2943B /* MacaronInputCellData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -242,11 +242,11 @@
 			files = (
 				775DB6771F5158F500AEC8A9 /* MacaronCell.swift in Sources */,
 				775DB67B1F51599300AEC8A9 /* MacaronInputCellType.swift in Sources */,
-				77D98A651F51710C00E2943B /* MacaronData.swift in Sources */,
+				77D98A651F51710C00E2943B /* MacaronCellData.swift in Sources */,
 				775DB67E1F515A1900AEC8A9 /* TextInputCell.swift in Sources */,
 				775DB6801F515A8F00AEC8A9 /* MacaronManageable.swift in Sources */,
 				77D98A621F51701300E2943B /* MacaronCellType.swift in Sources */,
-				77D98A671F51713E00E2943B /* MacaronInputData.swift in Sources */,
+				77D98A671F51713E00E2943B /* MacaronInputCellData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
