@@ -17,7 +17,7 @@ public extension MacaronManageable where Self: UIViewController {
     func initialize() {
         tableView.delegate = self
         tableView.dataSource = self
-        for cell in Set(cellData.map{$0.cellClassName}) {
+        for cell in Set(cellData.map{$0.CellClassName}) {
             tableView.register(UINib(nibName: cell, bundle: Config.MacaronBundle), forCellReuseIdentifier: cell)
         }
     }
@@ -27,7 +27,10 @@ public extension MacaronManageable where Self: UIViewController {
     }
 
     func cellForRowAt(indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellData[indexPath.row].cellClassName, for: indexPath)
-        return cell
+        var data = cellData[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: data.CellClassName,
+                                                 for: indexPath) as! MacaronCellType
+        cell.assign(data: &data)
+        return cell as! UITableViewCell
     }
 }

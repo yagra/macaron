@@ -9,3 +9,12 @@
 import UIKit
 
 public class MacaronCell: UITableViewCell {}
+
+public protocol MacaronCellType {
+    func getRowHeight() -> CGFloat
+    func assign(data: inout MacaronCellDataType)
+}
+
+public protocol MacaronInputCellType: MacaronCellType {
+    associatedtype InputType
+}
