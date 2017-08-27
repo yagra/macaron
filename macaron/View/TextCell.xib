@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="9Tb-g0-FGD" customClass="TextCell" customModule="macaron" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9Tb-g0-FGD" id="obh-aI-mdS">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ggg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msh-Ge-gjk">
+                        <rect key="frame" x="12" y="6" width="351" height="37.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="msh-Ge-gjk" secondAttribute="bottom" constant="6" id="4Qa-sK-E5c"/>
+                    <constraint firstItem="msh-Ge-gjk" firstAttribute="leading" secondItem="obh-aI-mdS" secondAttribute="leading" constant="12" id="UzS-ka-sEK"/>
+                    <constraint firstAttribute="trailing" secondItem="msh-Ge-gjk" secondAttribute="trailing" constant="12" id="c3Z-8h-xbK"/>
+                    <constraint firstItem="msh-Ge-gjk" firstAttribute="top" secondItem="obh-aI-mdS" secondAttribute="top" constant="6" id="hKc-5b-EBt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="label" destination="msh-Ge-gjk" id="k6R-Mn-pQg"/>
+                <outlet property="labelBottomMarginConstraint" destination="4Qa-sK-E5c" id="zOC-pA-UGq"/>
+                <outlet property="labelTopMarginConstraint" destination="hKc-5b-EBt" id="o6v-DU-62g"/>
+            </connections>
+            <point key="canvasLocation" x="4" y="41"/>
+        </tableViewCell>
+    </objects>
+</document>
