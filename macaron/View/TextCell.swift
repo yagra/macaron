@@ -25,6 +25,7 @@ public class TextCell: MacaronCell, MacaronCellType {
             if let font = data.font {
                 label.font = font
             }
+            label.sizeToFit()
             contentView.backgroundColor = data.backgroundColor
             if let margin = data.topMargin {
                 labelTopMarginConstraint.constant = margin
