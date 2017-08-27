@@ -38,3 +38,15 @@ public class MacaronInputCellData<Cell: MacaronInputCellType, V: MacaronValue>: 
         self.value = value
     }
 }
+
+public protocol MacaronActionCellDataType: MacaronCellDataType {
+    var action: () -> Void { get set }
+}
+
+public class MacaronActionCellData<Cell: MacaronActionCellType>: MacaronCellData<Cell>, MacaronActionCellDataType {
+    public var action: () -> Void
+
+    init(action: @escaping () -> Void) {
+        self.action = action
+    }
+}

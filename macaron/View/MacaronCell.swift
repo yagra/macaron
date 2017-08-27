@@ -16,3 +16,5 @@ public protocol MacaronCellType {
 }
 
 public protocol MacaronInputCellType: MacaronCellType {}
+
+public protocol MacaronActionCellType: MacaronCellType {}
