@@ -30,7 +30,7 @@
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
                         <connections>
-                            <action selector="textFieldEditingDidEnd:" destination="uJt-oR-tuj" eventType="editingDidEnd" id="Gm0-Xo-4XH"/>
+                            <action selector="textFieldEditingChanged:" destination="uJt-oR-tuj" eventType="editingChanged" id="Gxz-aB-Ctx"/>
                         </connections>
                     </textField>
                 </subviews>

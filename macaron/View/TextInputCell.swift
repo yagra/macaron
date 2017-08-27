@@ -17,7 +17,7 @@ public class TextInputCell: MacaronCell, MacaronInputCellType {
         return 50
     }
 
-    @IBAction func textFieldEditingDidEnd(_ sender: Any) {
+    @IBAction func textFieldEditingChanged(_ sender: Any) {
         data.value.value = textField.text ?? ""
     }
 
