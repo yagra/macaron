@@ -15,6 +15,4 @@ public protocol MacaronCellType {
     func assign(data: inout MacaronCellDataType)
 }
 
-public protocol MacaronInputCellType: MacaronCellType {
-    associatedtype InputType: MacaronValue
-}
+public protocol MacaronInputCellType: MacaronCellType {}

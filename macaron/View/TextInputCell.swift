@@ -9,7 +9,6 @@
 import UIKit
 
 public class TextInputCell: MacaronCell, MacaronInputCellType {
-    public typealias InputType = StringValue
     @IBOutlet weak public var label: UILabel!
     @IBOutlet weak var textField: UITextField!
     private var data: TextInputCellData!
