@@ -1,5 +1,5 @@
 //
-//  TextInput.swift
+//  StringInputCell.swift
 //  macaron
 //
 //  Created by Ryosuke Hayashi on 2017/08/26.
@@ -8,10 +8,10 @@
 
 import UIKit
 
-public class TextInputCell: MacaronCell, MacaronInputCellType {
+public class StringInputCell: MacaronCell, MacaronInputCellType {
     @IBOutlet weak public var label: UILabel!
     @IBOutlet weak var textField: UITextField!
-    private var data: TextInputCellData!
+    private var data: StringInputCellData!
 
     public func getRowHeight() -> CGFloat {
         return 50
@@ -22,7 +22,7 @@ public class TextInputCell: MacaronCell, MacaronInputCellType {
     }
 
     public func assign(data: inout MacaronCellDataType) {
-        if let data = data as? TextInputCellData {
+        if let data = data as? StringInputCellData {
             self.data = data
             label.text = data.labelText
             textField.placeholder = data.placeholder
@@ -30,7 +30,7 @@ public class TextInputCell: MacaronCell, MacaronInputCellType {
     }
 }
 
-public class TextInputCellData: MacaronInputCellData<TextInputCell, StringValue> {
+public class StringInputCellData: MacaronInputCellData<StringInputCell, StringValue> {
     var placeholder: String
 
     public init(labelText: String, placeholder: String, value: StringValue) {

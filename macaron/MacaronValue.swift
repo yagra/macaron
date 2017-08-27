@@ -8,16 +8,30 @@
 
 import Foundation
 
-public protocol MacaronValue {}
+public protocol MacaronValueType {}
 
-public class StringValue: MacaronValue {
-    public var value: String
+public class MacaronValue<T>: MacaronValueType {
+    public var value: T
 
-    public convenience init() {
-        self.init("")
-    }
-
-    public init(_ value: String) {
+    init(_ value: T) {
         self.value = value
+    }
+}
+
+public class StringValue: MacaronValue<String> {
+    public override init(_ value: String="") {
+        super.init(value)
+    }
+}
+
+public class IntValue: MacaronValue<Int> {
+    public override init(_ value: Int=0) {
+        super.init(value)
+    }
+}
+
+public class BoolValue: MacaronValue<Bool> {
+    public override init(_ value: Bool=false) {
+        super.init(value)
     }
 }

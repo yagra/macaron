@@ -21,13 +21,13 @@ public class MacaronCellData<Cell: MacaronCellType>: MacaronCellDataType {
 }
 
 public protocol MacaronInputCellDataType: MacaronCellDataType {
-    associatedtype InputType: MacaronValue
+    associatedtype InputType: MacaronValueType
 
     var labelText: String { get set }
     var value: InputType { get set }
 }
 
-public class MacaronInputCellData<Cell: MacaronInputCellType, V: MacaronValue>: MacaronCellData<Cell>, MacaronInputCellDataType {
+public class MacaronInputCellData<Cell: MacaronInputCellType, V: MacaronValueType>: MacaronCellData<Cell>, MacaronInputCellDataType {
     public typealias InputType = V
 
     public var labelText: String

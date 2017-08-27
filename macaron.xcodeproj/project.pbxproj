@@ -14,12 +14,14 @@
 		774599B11F52DB38001DB2E8 /* MacaronValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774599B01F52DB38001DB2E8 /* MacaronValue.swift */; };
 		774599B31F52F922001DB2E8 /* ButtonActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774599B21F52F922001DB2E8 /* ButtonActionCell.swift */; };
 		774599B51F52F92C001DB2E8 /* ButtonActionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 774599B41F52F92C001DB2E8 /* ButtonActionCell.xib */; };
+		774599B71F531AD4001DB2E8 /* IntInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774599B61F531AD4001DB2E8 /* IntInputCell.swift */; };
+		774599BA1F531B22001DB2E8 /* IntInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 774599B91F531B22001DB2E8 /* IntInputCell.xib */; };
 		775DB65C1F51580C00AEC8A9 /* macaron.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 775DB6521F51580C00AEC8A9 /* macaron.framework */; };
 		775DB6611F51580C00AEC8A9 /* macaronTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775DB6601F51580C00AEC8A9 /* macaronTests.swift */; };
 		775DB6631F51580C00AEC8A9 /* macaron.h in Headers */ = {isa = PBXBuildFile; fileRef = 775DB6551F51580C00AEC8A9 /* macaron.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		775DB67E1F515A1900AEC8A9 /* TextInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775DB67D1F515A1900AEC8A9 /* TextInputCell.swift */; };
+		775DB67E1F515A1900AEC8A9 /* StringInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775DB67D1F515A1900AEC8A9 /* StringInputCell.swift */; };
 		775DB6801F515A8F00AEC8A9 /* MacaronViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775DB67F1F515A8F00AEC8A9 /* MacaronViewController.swift */; };
-		77D98A5C1F51648300E2943B /* TextInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77D98A5B1F51648300E2943B /* TextInputCell.xib */; };
+		77D98A5C1F51648300E2943B /* StringInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77D98A5B1F51648300E2943B /* StringInputCell.xib */; };
 		77D98A621F51701300E2943B /* MacaronCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D98A611F51701300E2943B /* MacaronCell.swift */; };
 		77D98A651F51710C00E2943B /* MacaronCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D98A641F51710C00E2943B /* MacaronCellData.swift */; };
 		77D98A691F517A3C00E2943B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D98A681F517A3C00E2943B /* Config.swift */; };
@@ -43,15 +45,17 @@
 		774599B01F52DB38001DB2E8 /* MacaronValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacaronValue.swift; sourceTree = "<group>"; };
 		774599B21F52F922001DB2E8 /* ButtonActionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonActionCell.swift; sourceTree = "<group>"; };
 		774599B41F52F92C001DB2E8 /* ButtonActionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonActionCell.xib; sourceTree = "<group>"; };
+		774599B61F531AD4001DB2E8 /* IntInputCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntInputCell.swift; sourceTree = "<group>"; };
+		774599B91F531B22001DB2E8 /* IntInputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntInputCell.xib; sourceTree = "<group>"; };
 		775DB6521F51580C00AEC8A9 /* macaron.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = macaron.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		775DB6551F51580C00AEC8A9 /* macaron.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = macaron.h; sourceTree = "<group>"; };
 		775DB6561F51580C00AEC8A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		775DB65B1F51580C00AEC8A9 /* macaronTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = macaronTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		775DB6601F51580C00AEC8A9 /* macaronTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macaronTests.swift; sourceTree = "<group>"; };
 		775DB6621F51580C00AEC8A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		775DB67D1F515A1900AEC8A9 /* TextInputCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputCell.swift; sourceTree = "<group>"; };
+		775DB67D1F515A1900AEC8A9 /* StringInputCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringInputCell.swift; sourceTree = "<group>"; };
 		775DB67F1F515A8F00AEC8A9 /* MacaronViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacaronViewController.swift; sourceTree = "<group>"; };
-		77D98A5B1F51648300E2943B /* TextInputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextInputCell.xib; sourceTree = "<group>"; };
+		77D98A5B1F51648300E2943B /* StringInputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StringInputCell.xib; sourceTree = "<group>"; };
 		77D98A611F51701300E2943B /* MacaronCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacaronCell.swift; sourceTree = "<group>"; };
 		77D98A641F51710C00E2943B /* MacaronCellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacaronCellData.swift; sourceTree = "<group>"; };
 		77D98A681F517A3C00E2943B /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
@@ -123,8 +127,10 @@
 				77D98A611F51701300E2943B /* MacaronCell.swift */,
 				774599A81F52AC18001DB2E8 /* TextCell.swift */,
 				774599AA1F52AC23001DB2E8 /* TextCell.xib */,
-				775DB67D1F515A1900AEC8A9 /* TextInputCell.swift */,
-				77D98A5B1F51648300E2943B /* TextInputCell.xib */,
+				775DB67D1F515A1900AEC8A9 /* StringInputCell.swift */,
+				77D98A5B1F51648300E2943B /* StringInputCell.xib */,
+				774599B61F531AD4001DB2E8 /* IntInputCell.swift */,
+				774599B91F531B22001DB2E8 /* IntInputCell.xib */,
 				774599AE1F52AEF8001DB2E8 /* LineCell.swift */,
 				774599AC1F52AEDB001DB2E8 /* LineCell.xib */,
 				774599B21F52F922001DB2E8 /* ButtonActionCell.swift */,
@@ -229,9 +235,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				774599BA1F531B22001DB2E8 /* IntInputCell.xib in Resources */,
 				774599AD1F52AEDB001DB2E8 /* LineCell.xib in Resources */,
 				774599AB1F52AC23001DB2E8 /* TextCell.xib in Resources */,
-				77D98A5C1F51648300E2943B /* TextInputCell.xib in Resources */,
+				77D98A5C1F51648300E2943B /* StringInputCell.xib in Resources */,
 				774599B51F52F92C001DB2E8 /* ButtonActionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,8 +257,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				774599B71F531AD4001DB2E8 /* IntInputCell.swift in Sources */,
 				77D98A651F51710C00E2943B /* MacaronCellData.swift in Sources */,
-				775DB67E1F515A1900AEC8A9 /* TextInputCell.swift in Sources */,
+				775DB67E1F515A1900AEC8A9 /* StringInputCell.swift in Sources */,
 				775DB6801F515A8F00AEC8A9 /* MacaronViewController.swift in Sources */,
 				774599B11F52DB38001DB2E8 /* MacaronValue.swift in Sources */,
 				77D98A691F517A3C00E2943B /* Config.swift in Sources */,

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="xMv-bB-BxA" customClass="IntInputCell" customModule="macaron" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xMv-bB-BxA" id="BC5-aC-Og9">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kGx-9O-wIN">
+                        <rect key="frame" x="10" y="12" width="37.5" height="25.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pvu-jU-2g4">
+                        <rect key="frame" x="67.5" y="4" width="299.5" height="41.5"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <action selector="textFieldEditingChanged:" destination="xMv-bB-BxA" eventType="editingChanged" id="1vZ-Dn-Vck"/>
+                        </connections>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="pvu-jU-2g4" secondAttribute="trailing" constant="8" id="F4y-5b-26D"/>
+                    <constraint firstAttribute="bottom" secondItem="kGx-9O-wIN" secondAttribute="bottom" constant="12" id="O2t-mW-YdO"/>
+                    <constraint firstItem="pvu-jU-2g4" firstAttribute="leading" secondItem="kGx-9O-wIN" secondAttribute="trailing" constant="20" id="T5o-b5-hnK"/>
+                    <constraint firstItem="kGx-9O-wIN" firstAttribute="leading" secondItem="BC5-aC-Og9" secondAttribute="leading" constant="10" id="aNh-3b-yEF"/>
+                    <constraint firstItem="kGx-9O-wIN" firstAttribute="top" secondItem="BC5-aC-Og9" secondAttribute="top" constant="12" id="hiM-pC-qlG"/>
+                    <constraint firstItem="pvu-jU-2g4" firstAttribute="top" secondItem="BC5-aC-Og9" secondAttribute="top" constant="4" id="kq9-Mm-3Ny"/>
+                    <constraint firstAttribute="bottom" secondItem="pvu-jU-2g4" secondAttribute="bottom" constant="4" id="yev-Cu-3tw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="label" destination="kGx-9O-wIN" id="YQY-wD-evQ"/>
+                <outlet property="textField" destination="pvu-jU-2g4" id="om5-QO-Ven"/>
+            </connections>
+            <point key="canvasLocation" x="-32.5" y="84"/>
+        </tableViewCell>
+    </objects>
+</document>
