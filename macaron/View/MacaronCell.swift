@@ -16,5 +16,5 @@ public protocol MacaronCellType {
 }
 
 public protocol MacaronInputCellType: MacaronCellType {
-    associatedtype InputType
+    associatedtype InputType: MacaronValue
 }

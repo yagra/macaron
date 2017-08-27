@@ -9,7 +9,7 @@
 import UIKit
 
 public class TextInputCell: MacaronCell, MacaronInputCellType {
-    public typealias InputType = String
+    public typealias InputType = StringValue
     @IBOutlet weak public var label: UILabel!
     @IBOutlet weak var textField: UITextField!
     private var data: TextInputCellData!
@@ -19,7 +19,7 @@ public class TextInputCell: MacaronCell, MacaronInputCellType {
     }
 
     @IBAction func textFieldEditingDidEnd(_ sender: Any) {
-        data.value = textField.text ?? ""
+        data.value.value = textField.text ?? ""
     }
 
     public func assign(data: inout MacaronCellDataType) {
@@ -31,11 +31,11 @@ public class TextInputCell: MacaronCell, MacaronInputCellType {
     }
 }
 
-public class TextInputCellData: MacaronInputCellData<TextInputCell, String> {
+public class TextInputCellData: MacaronInputCellData<TextInputCell, StringValue> {
     var placeholder: String
 
-    public init(labelText: String, placeholder: String) {
+    public init(labelText: String, placeholder: String, value: StringValue) {
         self.placeholder = placeholder
-        super.init(labelText: labelText, value: "")
+        super.init(labelText: labelText, value: value)
     }
 }
