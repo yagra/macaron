@@ -11,23 +11,26 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="uJt-oR-tuj" customClass="StringInputCell" customModule="macaron" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="42" id="uJt-oR-tuj" customClass="StringInputCell" customModule="macaron" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="42"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uJt-oR-tuj" id="5O4-9Y-kB6">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="41.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUn-zn-ykb">
-                        <rect key="frame" x="10" y="12" width="37.5" height="25.5"/>
+                        <rect key="frame" x="12" y="13" width="37.5" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wSG-OS-Tev">
-                        <rect key="frame" x="67.5" y="4" width="299.5" height="41.5"/>
+                        <rect key="frame" x="65.5" y="10" width="301.5" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="pwP-kC-gY0"/>
+                        </constraints>
                         <nil key="textColor"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <textInputTraits key="textInputTraits"/>
                         <connections>
                             <action selector="textFieldEditingChanged:" destination="uJt-oR-tuj" eventType="editingChanged" id="Gxz-aB-Ctx"/>
@@ -35,13 +38,11 @@
                     </textField>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="FUn-zn-ykb" firstAttribute="leading" secondItem="5O4-9Y-kB6" secondAttribute="leading" constant="10" id="5HW-8D-ZSm"/>
-                    <constraint firstItem="wSG-OS-Tev" firstAttribute="leading" secondItem="FUn-zn-ykb" secondAttribute="trailing" constant="20" id="6d4-ZW-sYl"/>
-                    <constraint firstAttribute="bottom" secondItem="wSG-OS-Tev" secondAttribute="bottom" constant="4" id="Fjj-zm-OFi"/>
-                    <constraint firstItem="FUn-zn-ykb" firstAttribute="top" secondItem="5O4-9Y-kB6" secondAttribute="top" constant="12" id="JMv-zq-J1t"/>
-                    <constraint firstItem="wSG-OS-Tev" firstAttribute="top" secondItem="5O4-9Y-kB6" secondAttribute="top" constant="4" id="PwP-ks-iWE"/>
-                    <constraint firstAttribute="bottom" secondItem="FUn-zn-ykb" secondAttribute="bottom" constant="12" id="Sce-iv-ByJ"/>
+                    <constraint firstItem="FUn-zn-ykb" firstAttribute="leading" secondItem="5O4-9Y-kB6" secondAttribute="leading" constant="12" id="5HW-8D-ZSm"/>
+                    <constraint firstItem="wSG-OS-Tev" firstAttribute="leading" secondItem="FUn-zn-ykb" secondAttribute="trailing" constant="16" id="6d4-ZW-sYl"/>
                     <constraint firstAttribute="trailing" secondItem="wSG-OS-Tev" secondAttribute="trailing" constant="8" id="ekg-JR-vgH"/>
+                    <constraint firstItem="wSG-OS-Tev" firstAttribute="centerY" secondItem="5O4-9Y-kB6" secondAttribute="centerY" constant="1" id="iUL-Sv-v2x"/>
+                    <constraint firstItem="FUn-zn-ykb" firstAttribute="centerY" secondItem="5O4-9Y-kB6" secondAttribute="centerY" constant="1" id="qqT-jY-NZD"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

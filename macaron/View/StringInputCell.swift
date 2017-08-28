@@ -14,7 +14,7 @@ public class StringInputCell: MacaronCell, MacaronInputCellType {
     private var data: StringInputCellData!
 
     public func getRowHeight() -> CGFloat {
-        return 50
+        return 42
     }
 
     @IBAction func textFieldEditingChanged(_ sender: Any) {
