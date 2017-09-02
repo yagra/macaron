@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class MacaronCell: UITableViewCell {}
+open class MacaronCell: UITableViewCell {}
 
 public protocol MacaronCellType {
     func getRowHeight() -> CGFloat
