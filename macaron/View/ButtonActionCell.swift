@@ -55,7 +55,7 @@ public class ButtonActionCellData: MacaronCellData<ButtonActionCell> {
     public var padding = UIEdgeInsetsMake(9.0, 24.0, 9.0, 24.0)
     public var enable = BoolValue(true)
 
-    public init(text: String, enable: BoolValue=BoolValue(true), action: @escaping () -> Void) {
+    public init(text: String, enable: BoolValue=BoolValue(true), _ action: @escaping () -> Void) {
         self.text = text
         self.enable = enable
         self.action = action
