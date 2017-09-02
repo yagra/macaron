@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class SwitchCell: MacaronCell, MacaronInputCellType {
+public class SwitchCell: MacaronCell, MacaronCellType {
     private var data: SwitchCellData!
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var toggle: UISwitch!
@@ -31,11 +31,13 @@ public class SwitchCell: MacaronCell, MacaronInputCellType {
     }
 }
 
-public class SwitchCellData: MacaronInputCellData<SwitchCell, BoolValue> {
-    public var labelTextAlignment: NSTextAlignment
+public class SwitchCellData: MacaronCellData<SwitchCell> {
+    public var value: BoolValue
+    public var labelText: String
+    public var labelTextAlignment: NSTextAlignment = .center
 
-    public init(labelText: String, value: InputType, labelTextAlignment: NSTextAlignment=NSTextAlignment.center) {
-        self.labelTextAlignment = labelTextAlignment
-        super.init(labelText: labelText, value: value)
+    public init(labelText: String, value: BoolValue) {
+        self.labelText = labelText
+        self.value = value
     }
 }

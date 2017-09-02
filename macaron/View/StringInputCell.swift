@@ -8,12 +8,11 @@
 
 import UIKit
 
-public class StringInputCell: MacaronCell, MacaronInputCellType {
+public class StringInputCell: MacaronCell, MacaronCellType {
     @IBOutlet weak public var label: UILabel!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var labelWidthConstraint: NSLayoutConstraint!
     private var height: CGFloat = 42
-
     private var data: StringInputCellData!
 
     public func getRowHeight() -> CGFloat {
@@ -42,6 +41,7 @@ public class StringInputCell: MacaronCell, MacaronInputCellType {
             if let font = data.fieldFont {
                 textField.font = font
             }
+            textField.keyboardType = data.keyboardType
             textField.isSecureTextEntry = data.secret
             textField.placeholder = data.placeholder
             textField.sizeToFit()
@@ -51,24 +51,20 @@ public class StringInputCell: MacaronCell, MacaronInputCellType {
     }
 }
 
-public class StringInputCellData: MacaronInputCellData<StringInputCell, StringValue> {
+public class StringInputCellData: MacaronCellData<StringInputCell> {
+    public var value: StringValue
+    public var keyboardType: UIKeyboardType = UIKeyboardType.default
+    public var labelText: String
     public var placeholder: String
-    public var secret: Bool
+    public var secret: Bool = false
     public var labelWidth: CGFloat?
     public var labelFont: UIFont?
     public var fieldFont: UIFont?
-    public var labelTextAlignment: NSTextAlignment
+    public var labelTextAlignment: NSTextAlignment = .center
 
-    public init(labelText: String, placeholder: String="", value: StringValue,
-                labelWidth: CGFloat?=nil, labelFont: UIFont?=nil,
-                labelTextAlignment: NSTextAlignment=NSTextAlignment.left,
-                fieldFont: UIFont?=nil, secret: Bool=false) {
+    public init(labelText: String="", placeholder: String="", value: StringValue) {
+        self.labelText = labelText
         self.placeholder = placeholder
-        self.secret = secret
-        self.labelWidth = labelWidth
-        self.labelFont = labelFont
-        self.fieldFont = fieldFont
-        self.labelTextAlignment = labelTextAlignment
-        super.init(labelText: labelText, value: value)
+        self.value = value
     }
 }

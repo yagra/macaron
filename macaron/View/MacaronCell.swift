@@ -14,7 +14,3 @@ public protocol MacaronCellType {
     func getRowHeight() -> CGFloat
     func assign(data: inout MacaronCellDataType)
 }
-
-public protocol MacaronInputCellType: MacaronCellType {}
-
-public protocol MacaronActionCellType: MacaronCellType {}

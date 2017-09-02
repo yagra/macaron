@@ -14,8 +14,6 @@
 		774599B11F52DB38001DB2E8 /* MacaronValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774599B01F52DB38001DB2E8 /* MacaronValue.swift */; };
 		774599B31F52F922001DB2E8 /* ButtonActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774599B21F52F922001DB2E8 /* ButtonActionCell.swift */; };
 		774599B51F52F92C001DB2E8 /* ButtonActionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 774599B41F52F92C001DB2E8 /* ButtonActionCell.xib */; };
-		774599B71F531AD4001DB2E8 /* IntInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774599B61F531AD4001DB2E8 /* IntInputCell.swift */; };
-		774599BA1F531B22001DB2E8 /* IntInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 774599B91F531B22001DB2E8 /* IntInputCell.xib */; };
 		77495D481F5A8D7500AB54AE /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77495D471F5A8D7500AB54AE /* UIColor+.swift */; };
 		77495D4A1F5A985600AB54AE /* SwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77495D491F5A985600AB54AE /* SwitchCell.xib */; };
 		77495D4C1F5A986000AB54AE /* SwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77495D4B1F5A986000AB54AE /* SwitchCell.swift */; };
@@ -50,8 +48,6 @@
 		774599B01F52DB38001DB2E8 /* MacaronValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacaronValue.swift; sourceTree = "<group>"; };
 		774599B21F52F922001DB2E8 /* ButtonActionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonActionCell.swift; sourceTree = "<group>"; };
 		774599B41F52F92C001DB2E8 /* ButtonActionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonActionCell.xib; sourceTree = "<group>"; };
-		774599B61F531AD4001DB2E8 /* IntInputCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntInputCell.swift; sourceTree = "<group>"; };
-		774599B91F531B22001DB2E8 /* IntInputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntInputCell.xib; sourceTree = "<group>"; };
 		77495D471F5A8D7500AB54AE /* UIColor+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		77495D491F5A985600AB54AE /* SwitchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwitchCell.xib; sourceTree = "<group>"; };
 		77495D4B1F5A986000AB54AE /* SwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCell.swift; sourceTree = "<group>"; };
@@ -142,8 +138,6 @@
 				77495D4D1F5A9D5500AB54AE /* BlankCell.xib */,
 				775DB67D1F515A1900AEC8A9 /* StringInputCell.swift */,
 				77D98A5B1F51648300E2943B /* StringInputCell.xib */,
-				774599B61F531AD4001DB2E8 /* IntInputCell.swift */,
-				774599B91F531B22001DB2E8 /* IntInputCell.xib */,
 				774599AE1F52AEF8001DB2E8 /* LineCell.swift */,
 				774599AC1F52AEDB001DB2E8 /* LineCell.xib */,
 				774599B21F52F922001DB2E8 /* ButtonActionCell.swift */,
@@ -251,7 +245,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				77495D4E1F5A9D5500AB54AE /* BlankCell.xib in Resources */,
-				774599BA1F531B22001DB2E8 /* IntInputCell.xib in Resources */,
 				774599AD1F52AEDB001DB2E8 /* LineCell.xib in Resources */,
 				774599AB1F52AC23001DB2E8 /* TextCell.xib in Resources */,
 				77D98A5C1F51648300E2943B /* StringInputCell.xib in Resources */,
@@ -274,7 +267,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				774599B71F531AD4001DB2E8 /* IntInputCell.swift in Sources */,
 				77D98A651F51710C00E2943B /* MacaronCellData.swift in Sources */,
 				775DB67E1F515A1900AEC8A9 /* StringInputCell.swift in Sources */,
 				77495D501F5A9D6000AB54AE /* BlankCell.swift in Sources */,

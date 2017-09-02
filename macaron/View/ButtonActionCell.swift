@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class ButtonActionCell: MacaronCell, MacaronActionCellType {
+public class ButtonActionCell: MacaronCell, MacaronCellType {
     private var height: CGFloat = 0.0
     private var action: (() -> Void)!
     @IBOutlet weak var button: UIButton!
@@ -44,30 +44,20 @@ public class ButtonActionCell: MacaronCell, MacaronActionCellType {
     
 }
 
-public class ButtonActionCellData: MacaronActionCellData<ButtonActionCell> {
+public class ButtonActionCellData: MacaronCellData<ButtonActionCell> {
+    public var action: () -> ()
     public var text: String
-    public var normalTextColor: UIColor
-    public var disabledTextColor: UIColor
+    public var normalTextColor: UIColor = .black
+    public var disabledTextColor: UIColor = .black
     public var font: UIFont?
-    public var normalBackgroundColor: UIColor
-    public var disabledBackgroundColor: UIColor
-    public var padding: UIEdgeInsets
-    public var enable: BoolValue
+    public var normalBackgroundColor: UIColor = .white
+    public var disabledBackgroundColor: UIColor = .white
+    public var padding = UIEdgeInsetsMake(9.0, 24.0, 9.0, 24.0)
+    public var enable = BoolValue(true)
 
-    public init(text: String, font: UIFont?=nil,
-                normalTextColor: UIColor=UIColor.black, normalBackgroundColor: UIColor=UIColor.white,
-                disabledTextColor: UIColor=UIColor.gray, disabledBackgroundColor: UIColor=UIColor.white,
-                enable: BoolValue=BoolValue(true),
-                padding: UIEdgeInsets=UIEdgeInsetsMake(9.0, 24.0, 9.0, 24.0),
-                action: @escaping () -> Void) {
+    public init(text: String, enable: BoolValue=BoolValue(true), action: @escaping () -> Void) {
         self.text = text
-        self.normalTextColor = normalTextColor
-        self.disabledTextColor = disabledTextColor
-        self.font = font
-        self.normalBackgroundColor = normalBackgroundColor
-        self.disabledBackgroundColor = disabledBackgroundColor
-        self.padding = padding
         self.enable = enable
-        super.init(action: action)
+        self.action = action
     }
 }
