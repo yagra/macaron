@@ -11,8 +11,6 @@ import UIKit
 public class TextCell: MacaronCell, MacaronCellType {
     private var height: CGFloat = 50.0
     @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var labelTopMarginConstraint: NSLayoutConstraint!
-    @IBOutlet weak var labelBottomMarginConstraint: NSLayoutConstraint!
     
     public func getRowHeight() -> CGFloat {
         return height
@@ -27,13 +25,7 @@ public class TextCell: MacaronCell, MacaronCellType {
             }
             label.sizeToFit()
             contentView.backgroundColor = data.backgroundColor
-            if let margin = data.topMargin {
-                labelTopMarginConstraint.constant = margin
-            }
-            if let margin = data.bottomMargin {
-                labelBottomMarginConstraint.constant = margin
-            }
-            height = label.frame.height + labelTopMarginConstraint.constant + labelBottomMarginConstraint.constant
+            height = label.frame.height
         }
     }
 }
@@ -43,18 +35,13 @@ public class TextCellData: MacaronCellData<TextCell> {
     public var textColor: UIColor
     public var font: UIFont?
     public var backgroundColor: UIColor
-    public var topMargin: CGFloat?
-    public var bottomMargin: CGFloat?
 
     public init(text: String, textColor: UIColor=UIColor.black, font: UIFont?=nil,
-                backgroundColor: UIColor=UIColor.white,
-                topMargin: CGFloat?=nil, bottomMargin: CGFloat?=nil) {
+                backgroundColor: UIColor=UIColor.white) {
         self.text = text
         self.textColor = textColor
         self.font = font
         self.backgroundColor = backgroundColor
-        self.topMargin = topMargin
-        self.bottomMargin = bottomMargin
         super.init()
     }
 }

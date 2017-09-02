@@ -14,7 +14,7 @@ public class SwitchCell: MacaronCell, MacaronInputCellType {
     @IBOutlet weak var toggle: UISwitch!
 
     public func getRowHeight() -> CGFloat {
-        return 45
+        return 34
     }
 
     public func assign(data: inout MacaronCellDataType) {

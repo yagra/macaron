@@ -19,23 +19,21 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ggg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msh-Ge-gjk">
-                        <rect key="frame" x="12" y="6" width="351" height="37.5"/>
+                        <rect key="frame" x="12" y="0.0" width="351" height="49.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="msh-Ge-gjk" secondAttribute="bottom" constant="6" id="4Qa-sK-E5c"/>
+                    <constraint firstAttribute="bottom" secondItem="msh-Ge-gjk" secondAttribute="bottom" id="4Qa-sK-E5c"/>
                     <constraint firstItem="msh-Ge-gjk" firstAttribute="leading" secondItem="obh-aI-mdS" secondAttribute="leading" constant="12" id="UzS-ka-sEK"/>
                     <constraint firstAttribute="trailing" secondItem="msh-Ge-gjk" secondAttribute="trailing" constant="12" id="c3Z-8h-xbK"/>
-                    <constraint firstItem="msh-Ge-gjk" firstAttribute="top" secondItem="obh-aI-mdS" secondAttribute="top" constant="6" id="hKc-5b-EBt"/>
+                    <constraint firstItem="msh-Ge-gjk" firstAttribute="top" secondItem="obh-aI-mdS" secondAttribute="top" id="hKc-5b-EBt"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="label" destination="msh-Ge-gjk" id="k6R-Mn-pQg"/>
-                <outlet property="labelBottomMarginConstraint" destination="4Qa-sK-E5c" id="zOC-pA-UGq"/>
-                <outlet property="labelTopMarginConstraint" destination="hKc-5b-EBt" id="o6v-DU-62g"/>
             </connections>
             <point key="canvasLocation" x="4" y="41"/>
         </tableViewCell>
