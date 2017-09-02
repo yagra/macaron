@@ -26,9 +26,7 @@ public class StringInputCell: MacaronCell, MacaronCellType {
     public func assign(data: inout MacaronCellDataType) {
         if let data = data as? StringInputCellData {
             self.data = data
-            if let font = data.labelFont {
-                label.font = font
-            }
+            label.font ??= data.labelFont
             label.text = data.labelText
             label.sizeToFit()
             if let labelWidth = data.labelWidth {
@@ -38,9 +36,7 @@ public class StringInputCell: MacaronCell, MacaronCellType {
             }
             label.textAlignment = data.labelTextAlignment
 
-            if let font = data.fieldFont {
-                textField.font = font
-            }
+            textField.font ??= data.fieldFont
             textField.keyboardType = data.keyboardType
             textField.isSecureTextEntry = data.secret
             textField.placeholder = data.placeholder

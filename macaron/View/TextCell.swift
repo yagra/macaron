@@ -20,9 +20,7 @@ public class TextCell: MacaronCell, MacaronCellType {
         if let data = data as? TextCellData {
             label.text = data.text
             label.textColor = data.textColor
-            if let font = data.font {
-                label.font = font
-            }
+            label.font ??= data.font
             label.sizeToFit()
             contentView.backgroundColor = data.backgroundColor
             height = label.frame.height

@@ -29,9 +29,7 @@ public class ButtonActionCell: MacaronCell, MacaronCellType {
             button.setTitleColor(data.disabledTextColor, for: .disabled)
             button.setBackgroundImage(data.disabledBackgroundColor.image, for: .disabled)
 
-            if let font = data.font {
-                button.titleLabel?.font = font
-            }
+            button.titleLabel?.font ??= data.font
             button.contentEdgeInsets = data.padding
             button.sizeToFit()
             height = button.frame.height
