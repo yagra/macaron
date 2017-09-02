@@ -19,13 +19,16 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUn-zn-ykb">
-                        <rect key="frame" x="12" y="13" width="37.5" height="18"/>
+                        <rect key="frame" x="12" y="10" width="37.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="37.5" id="zgj-SF-UB1"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wSG-OS-Tev">
-                        <rect key="frame" x="65.5" y="10" width="301.5" height="24"/>
+                        <rect key="frame" x="61.5" y="8.5" width="305.5" height="24"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="24" id="pwP-kC-gY0"/>
                         </constraints>
@@ -38,15 +41,19 @@
                     </textField>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="FUn-zn-ykb" firstAttribute="top" secondItem="5O4-9Y-kB6" secondAttribute="top" constant="10" id="0dN-Cb-We1"/>
+                    <constraint firstItem="FUn-zn-ykb" firstAttribute="centerY" secondItem="wSG-OS-Tev" secondAttribute="centerY" id="4ga-iD-TdR"/>
                     <constraint firstItem="FUn-zn-ykb" firstAttribute="leading" secondItem="5O4-9Y-kB6" secondAttribute="leading" constant="12" id="5HW-8D-ZSm"/>
-                    <constraint firstItem="wSG-OS-Tev" firstAttribute="leading" secondItem="FUn-zn-ykb" secondAttribute="trailing" constant="16" id="6d4-ZW-sYl"/>
+                    <constraint firstItem="wSG-OS-Tev" firstAttribute="leading" secondItem="FUn-zn-ykb" secondAttribute="trailing" constant="12" id="6d4-ZW-sYl"/>
                     <constraint firstAttribute="trailing" secondItem="wSG-OS-Tev" secondAttribute="trailing" constant="8" id="ekg-JR-vgH"/>
-                    <constraint firstItem="wSG-OS-Tev" firstAttribute="centerY" secondItem="5O4-9Y-kB6" secondAttribute="centerY" constant="1" id="iUL-Sv-v2x"/>
-                    <constraint firstItem="FUn-zn-ykb" firstAttribute="centerY" secondItem="5O4-9Y-kB6" secondAttribute="centerY" constant="1" id="qqT-jY-NZD"/>
+                    <constraint firstAttribute="bottom" secondItem="FUn-zn-ykb" secondAttribute="bottom" constant="10" id="xRF-5y-P03"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="label" destination="FUn-zn-ykb" id="vrg-86-HVY"/>
+                <outlet property="labelBottomPaddingConstraint" destination="xRF-5y-P03" id="ToQ-eq-eef"/>
+                <outlet property="labelTopPaddingConstraint" destination="0dN-Cb-We1" id="zLP-BX-Xx9"/>
+                <outlet property="labelWidthConstraint" destination="zgj-SF-UB1" id="qkj-5s-iTZ"/>
                 <outlet property="textField" destination="wSG-OS-Tev" id="LDN-0a-r6B"/>
             </connections>
             <point key="canvasLocation" x="-32.5" y="84"/>

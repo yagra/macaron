@@ -11,10 +11,15 @@ import UIKit
 public class StringInputCell: MacaronCell, MacaronInputCellType {
     @IBOutlet weak public var label: UILabel!
     @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var labelWidthConstraint: NSLayoutConstraint!
+    @IBOutlet weak var labelTopPaddingConstraint: NSLayoutConstraint!
+    @IBOutlet weak var labelBottomPaddingConstraint: NSLayoutConstraint!
+    private var height: CGFloat = 42
+
     private var data: StringInputCellData!
 
     public func getRowHeight() -> CGFloat {
-        return 42
+        return height
     }
 
     @IBAction func textFieldEditingChanged(_ sender: Any) {
@@ -24,9 +29,28 @@ public class StringInputCell: MacaronCell, MacaronInputCellType {
     public func assign(data: inout MacaronCellDataType) {
         if let data = data as? StringInputCellData {
             self.data = data
-            textField.isSecureTextEntry = data.secret
+            if let font = data.labelFont {
+                label.font = font
+            }
             label.text = data.labelText
+            label.sizeToFit()
+            if let labelWidth = data.labelWidth {
+                labelWidthConstraint.constant = labelWidth
+            } else {
+                labelWidthConstraint.isActive = false
+            }
+
+            if let font = data.fieldFont {
+                textField.font = font
+            }
+            textField.isSecureTextEntry = data.secret
             textField.placeholder = data.placeholder
+            textField.sizeToFit()
+
+            let componentHeight = max(textField.frame.height, label.frame.height)
+            height = componentHeight + data.topMargin + data.bottomMargin
+            labelTopPaddingConstraint.constant = componentHeight - label.frame.height + data.topMargin
+            labelBottomPaddingConstraint.constant = componentHeight - label.frame.height + data.bottomMargin
         }
     }
 }
@@ -34,10 +58,23 @@ public class StringInputCell: MacaronCell, MacaronInputCellType {
 public class StringInputCellData: MacaronInputCellData<StringInputCell, StringValue> {
     public var placeholder: String
     public var secret: Bool
+    public var labelWidth: CGFloat?
+    public var labelFont: UIFont?
+    public var fieldFont: UIFont?
+    public var topMargin: CGFloat
+    public var bottomMargin: CGFloat
 
-    public init(labelText: String, placeholder: String="", value: StringValue, secret: Bool=false) {
+    public init(labelText: String, placeholder: String="", value: StringValue,
+                labelWidth: CGFloat?=nil, labelFont: UIFont?=nil,
+                fieldFont: UIFont?=nil, secret: Bool=false,
+                topMargin: CGFloat=10.0, bottomMargin: CGFloat=10.0) {
         self.placeholder = placeholder
         self.secret = secret
+        self.labelWidth = labelWidth
+        self.labelFont = labelFont
+        self.fieldFont = fieldFont
+        self.topMargin = topMargin
+        self.bottomMargin = bottomMargin
         super.init(labelText: labelText, value: value)
     }
 }
