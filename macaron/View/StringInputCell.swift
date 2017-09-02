@@ -12,8 +12,8 @@ public class StringInputCell: MacaronCell, MacaronInputCellType {
     @IBOutlet weak public var label: UILabel!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var labelWidthConstraint: NSLayoutConstraint!
-    @IBOutlet weak var labelTopPaddingConstraint: NSLayoutConstraint!
-    @IBOutlet weak var labelBottomPaddingConstraint: NSLayoutConstraint!
+    @IBOutlet weak var textFieldTopPaddingConstraint: NSLayoutConstraint!
+    @IBOutlet weak var textFieldBottomPaddingConstraint: NSLayoutConstraint!
     private var height: CGFloat = 42
 
     private var data: StringInputCellData!
@@ -39,6 +39,7 @@ public class StringInputCell: MacaronCell, MacaronInputCellType {
             } else {
                 labelWidthConstraint.isActive = false
             }
+            label.textAlignment = data.labelTextAlignment
 
             if let font = data.fieldFont {
                 textField.font = font
@@ -49,8 +50,8 @@ public class StringInputCell: MacaronCell, MacaronInputCellType {
 
             let componentHeight = max(textField.frame.height, label.frame.height)
             height = componentHeight + data.topMargin + data.bottomMargin
-            labelTopPaddingConstraint.constant = componentHeight - label.frame.height + data.topMargin
-            labelBottomPaddingConstraint.constant = componentHeight - label.frame.height + data.bottomMargin
+            textFieldTopPaddingConstraint.constant = componentHeight - textField.frame.height + data.topMargin
+            textFieldBottomPaddingConstraint.constant = componentHeight - textField.frame.height + data.bottomMargin
         }
     }
 }
@@ -63,9 +64,11 @@ public class StringInputCellData: MacaronInputCellData<StringInputCell, StringVa
     public var fieldFont: UIFont?
     public var topMargin: CGFloat
     public var bottomMargin: CGFloat
+    public var labelTextAlignment: NSTextAlignment
 
     public init(labelText: String, placeholder: String="", value: StringValue,
                 labelWidth: CGFloat?=nil, labelFont: UIFont?=nil,
+                labelTextAlignment: NSTextAlignment=NSTextAlignment.left,
                 fieldFont: UIFont?=nil, secret: Bool=false,
                 topMargin: CGFloat=10.0, bottomMargin: CGFloat=10.0) {
         self.placeholder = placeholder
@@ -75,6 +78,7 @@ public class StringInputCellData: MacaronInputCellData<StringInputCell, StringVa
         self.fieldFont = fieldFont
         self.topMargin = topMargin
         self.bottomMargin = bottomMargin
+        self.labelTextAlignment = labelTextAlignment
         super.init(labelText: labelText, value: value)
     }
 }
