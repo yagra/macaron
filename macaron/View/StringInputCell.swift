@@ -35,7 +35,7 @@ public class StringInputCellData: MacaronInputCellData<StringInputCell, StringVa
     var placeholder: String
     var secret: Bool
 
-    public init(labelText: String, placeholder: String, value: StringValue, secret: Bool=false) {
+    public init(labelText: String, placeholder: String="", value: StringValue, secret: Bool=false) {
         self.placeholder = placeholder
         self.secret = secret
         super.init(labelText: labelText, value: value)
