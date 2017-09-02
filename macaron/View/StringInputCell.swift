@@ -24,6 +24,7 @@ public class StringInputCell: MacaronCell, MacaronInputCellType {
     public func assign(data: inout MacaronCellDataType) {
         if let data = data as? StringInputCellData {
             self.data = data
+            textField.isSecureTextEntry = data.secret
             label.text = data.labelText
             textField.placeholder = data.placeholder
         }
@@ -32,9 +33,11 @@ public class StringInputCell: MacaronCell, MacaronInputCellType {
 
 public class StringInputCellData: MacaronInputCellData<StringInputCell, StringValue> {
     var placeholder: String
+    var secret: Bool
 
-    public init(labelText: String, placeholder: String, value: StringValue) {
+    public init(labelText: String, placeholder: String, value: StringValue, secret: Bool=false) {
         self.placeholder = placeholder
+        self.secret = secret
         super.init(labelText: labelText, value: value)
     }
 }
