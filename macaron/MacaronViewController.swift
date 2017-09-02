@@ -20,7 +20,11 @@ open class MacaronViewController: UIViewController, UITableViewDelegate, UITable
         macaronCellData = cellData
         cellHeight = [CGFloat](repeating: 0.0, count: cellData.count)
         for cell in Set(cellData.map{$0.CellClassName}) {
-            tableView.register(UINib(nibName: cell, bundle: Config.MacaronBundle), forCellReuseIdentifier: cell)
+            var bundle = Bundle.main
+            if let _ = Config.MacaronBundle.path(forResource: cell, ofType: "nib") {
+                bundle = Config.MacaronBundle
+            }
+            tableView.register(UINib(nibName: cell, bundle: bundle), forCellReuseIdentifier: cell)
         }
     }
 
