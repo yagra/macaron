@@ -20,12 +20,18 @@ public class ButtonActionCell: MacaronCell, MacaronActionCellType {
     public func assign(data: inout MacaronCellDataType) {
         if let data = data as? ButtonActionCellData {
             action = data.action
+            button.isEnabled = data.enable.value
+
             button.setTitle(data.text, for: .normal)
-            button.setTitleColor(data.textColor, for: .normal)
+            button.setTitleColor(data.normalTextColor, for: .normal)
+            button.setBackgroundImage(data.normalBackgroundColor.image, for: .normal)
+
+            button.setTitleColor(data.disabledTextColor, for: .disabled)
+            button.setBackgroundImage(data.disabledBackgroundColor.image, for: .disabled)
+
             if let font = data.font {
                 button.titleLabel?.font = font
             }
-            button.backgroundColor = data.backgroundColor
             button.contentEdgeInsets = data.padding
             height = button.frame.height + data.verticalMargin * 2
         }
@@ -39,22 +45,30 @@ public class ButtonActionCell: MacaronCell, MacaronActionCellType {
 
 public class ButtonActionCellData: MacaronActionCellData<ButtonActionCell> {
     public var text: String
-    public var textColor: UIColor
+    public var normalTextColor: UIColor
+    public var disabledTextColor: UIColor
     public var font: UIFont?
-    public var backgroundColor: UIColor
+    public var normalBackgroundColor: UIColor
+    public var disabledBackgroundColor: UIColor
     public var verticalMargin: CGFloat
     public var padding: UIEdgeInsets
+    public var enable: BoolValue
 
-    public init(text: String, textColor: UIColor=UIColor.black, font: UIFont?=nil,
-         backgroundColor: UIColor=UIColor.white,
-         verticalMargin: CGFloat=10.0, padding: UIEdgeInsets=UIEdgeInsetsMake(9.0, 24.0, 9.0, 24.0),
-         action: @escaping () -> Void) {
+    public init(text: String, font: UIFont?=nil,
+                normalTextColor: UIColor=UIColor.black, normalBackgroundColor: UIColor=UIColor.white,
+                disabledTextColor: UIColor=UIColor.gray, disabledBackgroundColor: UIColor=UIColor.white,
+                enable: BoolValue=BoolValue(true),
+                verticalMargin: CGFloat=10.0, padding: UIEdgeInsets=UIEdgeInsetsMake(9.0, 24.0, 9.0, 24.0),
+                action: @escaping () -> Void) {
         self.text = text
-        self.textColor = textColor
+        self.normalTextColor = normalTextColor
+        self.disabledTextColor = disabledTextColor
         self.font = font
-        self.backgroundColor = backgroundColor
+        self.normalBackgroundColor = normalBackgroundColor
+        self.disabledBackgroundColor = disabledBackgroundColor
         self.verticalMargin = verticalMargin
         self.padding = padding
+        self.enable = enable
         super.init(action: action)
     }
 }
