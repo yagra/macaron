@@ -38,12 +38,12 @@ public class ButtonActionCell: MacaronCell, MacaronActionCellType {
 }
 
 public class ButtonActionCellData: MacaronActionCellData<ButtonActionCell> {
-    var text: String
-    var textColor: UIColor
-    var font: UIFont?
-    var backgroundColor: UIColor
-    var verticalMargin: CGFloat
-    var padding: UIEdgeInsets
+    public var text: String
+    public var textColor: UIColor
+    public var font: UIFont?
+    public var backgroundColor: UIColor
+    public var verticalMargin: CGFloat
+    public var padding: UIEdgeInsets
 
     public init(text: String, textColor: UIColor=UIColor.black, font: UIFont?=nil,
          backgroundColor: UIColor=UIColor.white,

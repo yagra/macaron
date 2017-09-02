@@ -31,7 +31,7 @@ public class IntInputCell: MacaronCell, MacaronInputCellType {
 }
 
 public class IntInputCellData: MacaronInputCellData<IntInputCell, IntValue> {
-    var placeholder: String
+    public var placeholder: String
 
     public init(labelText: String, placeholder: String="", value: IntValue) {
         self.placeholder = placeholder

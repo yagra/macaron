@@ -23,8 +23,8 @@ public class LineCell: MacaronCell, MacaronCellType {
 }
 
 public class LineCellData: MacaronCellData<LineCell> {
-    var height: CGFloat
-    var color: UIColor
+    public var height: CGFloat
+    public var color: UIColor
 
     public init(height: CGFloat, color: UIColor) {
         self.height = height

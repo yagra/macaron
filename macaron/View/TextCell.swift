@@ -39,12 +39,12 @@ public class TextCell: MacaronCell, MacaronCellType {
 }
 
 public class TextCellData: MacaronCellData<TextCell> {
-    var text: String
-    var textColor: UIColor
-    var font: UIFont?
-    var backgroundColor: UIColor
-    var topMargin: CGFloat?
-    var bottomMargin: CGFloat?
+    public var text: String
+    public var textColor: UIColor
+    public var font: UIFont?
+    public var backgroundColor: UIColor
+    public var topMargin: CGFloat?
+    public var bottomMargin: CGFloat?
 
     public init(text: String, textColor: UIColor=UIColor.black, font: UIFont?=nil,
                 backgroundColor: UIColor=UIColor.white,

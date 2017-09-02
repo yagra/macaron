@@ -32,8 +32,8 @@ public class StringInputCell: MacaronCell, MacaronInputCellType {
 }
 
 public class StringInputCellData: MacaronInputCellData<StringInputCell, StringValue> {
-    var placeholder: String
-    var secret: Bool
+    public var placeholder: String
+    public var secret: Bool
 
     public init(labelText: String, placeholder: String="", value: StringValue, secret: Bool=false) {
         self.placeholder = placeholder
