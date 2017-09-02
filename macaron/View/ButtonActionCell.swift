@@ -33,7 +33,8 @@ public class ButtonActionCell: MacaronCell, MacaronActionCellType {
                 button.titleLabel?.font = font
             }
             button.contentEdgeInsets = data.padding
-            height = button.frame.height + data.verticalMargin * 2
+            button.sizeToFit()
+            height = button.frame.height
         }
     }
 
@@ -50,7 +51,6 @@ public class ButtonActionCellData: MacaronActionCellData<ButtonActionCell> {
     public var font: UIFont?
     public var normalBackgroundColor: UIColor
     public var disabledBackgroundColor: UIColor
-    public var verticalMargin: CGFloat
     public var padding: UIEdgeInsets
     public var enable: BoolValue
 
@@ -58,7 +58,7 @@ public class ButtonActionCellData: MacaronActionCellData<ButtonActionCell> {
                 normalTextColor: UIColor=UIColor.black, normalBackgroundColor: UIColor=UIColor.white,
                 disabledTextColor: UIColor=UIColor.gray, disabledBackgroundColor: UIColor=UIColor.white,
                 enable: BoolValue=BoolValue(true),
-                verticalMargin: CGFloat=10.0, padding: UIEdgeInsets=UIEdgeInsetsMake(9.0, 24.0, 9.0, 24.0),
+                padding: UIEdgeInsets=UIEdgeInsetsMake(9.0, 24.0, 9.0, 24.0),
                 action: @escaping () -> Void) {
         self.text = text
         self.normalTextColor = normalTextColor
@@ -66,7 +66,6 @@ public class ButtonActionCellData: MacaronActionCellData<ButtonActionCell> {
         self.font = font
         self.normalBackgroundColor = normalBackgroundColor
         self.disabledBackgroundColor = disabledBackgroundColor
-        self.verticalMargin = verticalMargin
         self.padding = padding
         self.enable = enable
         super.init(action: action)

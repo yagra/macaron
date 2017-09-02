@@ -12,8 +12,6 @@ public class StringInputCell: MacaronCell, MacaronInputCellType {
     @IBOutlet weak public var label: UILabel!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var labelWidthConstraint: NSLayoutConstraint!
-    @IBOutlet weak var textFieldTopPaddingConstraint: NSLayoutConstraint!
-    @IBOutlet weak var textFieldBottomPaddingConstraint: NSLayoutConstraint!
     private var height: CGFloat = 42
 
     private var data: StringInputCellData!
@@ -48,10 +46,7 @@ public class StringInputCell: MacaronCell, MacaronInputCellType {
             textField.placeholder = data.placeholder
             textField.sizeToFit()
 
-            let componentHeight = max(textField.frame.height, label.frame.height)
-            height = componentHeight + data.topMargin + data.bottomMargin
-            textFieldTopPaddingConstraint.constant = componentHeight - textField.frame.height + data.topMargin
-            textFieldBottomPaddingConstraint.constant = componentHeight - textField.frame.height + data.bottomMargin
+            height = max(textField.frame.height, label.frame.height)
         }
     }
 }
@@ -62,22 +57,17 @@ public class StringInputCellData: MacaronInputCellData<StringInputCell, StringVa
     public var labelWidth: CGFloat?
     public var labelFont: UIFont?
     public var fieldFont: UIFont?
-    public var topMargin: CGFloat
-    public var bottomMargin: CGFloat
     public var labelTextAlignment: NSTextAlignment
 
     public init(labelText: String, placeholder: String="", value: StringValue,
                 labelWidth: CGFloat?=nil, labelFont: UIFont?=nil,
                 labelTextAlignment: NSTextAlignment=NSTextAlignment.left,
-                fieldFont: UIFont?=nil, secret: Bool=false,
-                topMargin: CGFloat=10.0, bottomMargin: CGFloat=10.0) {
+                fieldFont: UIFont?=nil, secret: Bool=false) {
         self.placeholder = placeholder
         self.secret = secret
         self.labelWidth = labelWidth
         self.labelFont = labelFont
         self.fieldFont = fieldFont
-        self.topMargin = topMargin
-        self.bottomMargin = bottomMargin
         self.labelTextAlignment = labelTextAlignment
         super.init(labelText: labelText, value: value)
     }
