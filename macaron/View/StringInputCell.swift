@@ -25,6 +25,7 @@ public class StringInputCell: MacaronCell, MacaronCellType {
 
     @IBAction func textFieldEditingChanged(_ sender: Any) {
         data.value.value = textField.text ?? ""
+        data.onChange?()
     }
 
     public func assign(data: inout MacaronCellDataType) {
@@ -70,6 +71,7 @@ public class StringInputCellData: MacaronCellData<StringInputCell> {
     public var bottomMargin: CGFloat = 10.0
     public var textFieldHeight: CGFloat = 24.0
     public var labelToTextFieldSpace: CGFloat = 12.0
+    public var onChange: (() -> Void)?
 
     public init(labelText: String="", placeholder: String="", value: StringValue) {
         self.labelText = labelText
