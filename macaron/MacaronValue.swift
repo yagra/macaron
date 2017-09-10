@@ -11,10 +11,21 @@ import Foundation
 public protocol MacaronValueType {}
 
 public class MacaronValue<T>: MacaronValueType {
-    public var value: T
+    private var _value: T
+    public var value: T {
+        get {
+            onGet?(_value)
+            return _value
+        } set {
+            onSet?(newValue)
+            _value = newValue
+        }
+    }
+    public var onGet: ((_ v: T) -> Void)?
+    public var onSet: ((_ v: T) -> Void)?
 
     init(_ value: T) {
-        self.value = value
+        self._value = value
     }
 }
 
