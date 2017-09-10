@@ -28,7 +28,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wSG-OS-Tev">
-                        <rect key="frame" x="61.5" y="0.0" width="305.5" height="41.5"/>
+                        <rect key="frame" x="61.5" y="10" width="305.5" height="21.5"/>
                         <nil key="textColor"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <textInputTraits key="textInputTraits"/>
@@ -40,16 +40,19 @@
                 <constraints>
                     <constraint firstItem="FUn-zn-ykb" firstAttribute="leading" secondItem="5O4-9Y-kB6" secondAttribute="leading" constant="12" id="5HW-8D-ZSm"/>
                     <constraint firstItem="wSG-OS-Tev" firstAttribute="leading" secondItem="FUn-zn-ykb" secondAttribute="trailing" constant="12" id="6d4-ZW-sYl"/>
-                    <constraint firstAttribute="bottom" secondItem="wSG-OS-Tev" secondAttribute="bottom" id="eTl-IN-UYb"/>
+                    <constraint firstAttribute="bottom" secondItem="wSG-OS-Tev" secondAttribute="bottom" constant="10" id="eTl-IN-UYb"/>
                     <constraint firstAttribute="trailing" secondItem="wSG-OS-Tev" secondAttribute="trailing" constant="8" id="ekg-JR-vgH"/>
                     <constraint firstItem="wSG-OS-Tev" firstAttribute="centerY" secondItem="FUn-zn-ykb" secondAttribute="centerY" id="k9b-yZ-uEM"/>
-                    <constraint firstItem="wSG-OS-Tev" firstAttribute="top" secondItem="5O4-9Y-kB6" secondAttribute="top" id="p4b-vB-K1J"/>
+                    <constraint firstItem="wSG-OS-Tev" firstAttribute="top" secondItem="5O4-9Y-kB6" secondAttribute="top" constant="10" id="p4b-vB-K1J"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="bottomMarginConstraint" destination="eTl-IN-UYb" id="SPF-gd-527"/>
                 <outlet property="label" destination="FUn-zn-ykb" id="vrg-86-HVY"/>
+                <outlet property="labelToTextFieldSpace" destination="6d4-ZW-sYl" id="eVU-Tx-BBM"/>
                 <outlet property="labelWidthConstraint" destination="zgj-SF-UB1" id="qkj-5s-iTZ"/>
                 <outlet property="textField" destination="wSG-OS-Tev" id="LDN-0a-r6B"/>
+                <outlet property="topMarginConstraint" destination="p4b-vB-K1J" id="vXx-0p-3my"/>
             </connections>
             <point key="canvasLocation" x="-32.5" y="84"/>
         </tableViewCell>

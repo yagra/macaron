@@ -12,6 +12,10 @@ public class StringInputCell: MacaronCell, MacaronCellType {
     @IBOutlet weak public var label: UILabel!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var labelWidthConstraint: NSLayoutConstraint!
+    @IBOutlet weak var topMarginConstraint: NSLayoutConstraint!
+    @IBOutlet weak var bottomMarginConstraint: NSLayoutConstraint!
+    @IBOutlet weak var labelToTextFieldSpace: NSLayoutConstraint!
+
     private var height: CGFloat = 42
     private var data: StringInputCellData!
 
@@ -36,13 +40,18 @@ public class StringInputCell: MacaronCell, MacaronCellType {
             }
             label.textAlignment = data.labelTextAlignment
 
+            topMarginConstraint.constant = data.topMargin
+            bottomMarginConstraint.constant = data.bottomMargin
+
+            labelToTextFieldSpace.constant = data.labelToTextFieldSpace
+
             textField.font ??= data.fieldFont
             textField.keyboardType = data.keyboardType
             textField.isSecureTextEntry = data.secret
             textField.placeholder = data.placeholder
             textField.sizeToFit()
 
-            height = max(textField.frame.height, label.frame.height)
+            height = data.textFieldHeight + data.topMargin + data.bottomMargin
         }
     }
 }
@@ -57,6 +66,10 @@ public class StringInputCellData: MacaronCellData<StringInputCell> {
     public var labelFont: UIFont?
     public var fieldFont: UIFont?
     public var labelTextAlignment: NSTextAlignment = .center
+    public var topMargin: CGFloat = 10.0
+    public var bottomMargin: CGFloat = 10.0
+    public var textFieldHeight: CGFloat = 24.0
+    public var labelToTextFieldSpace: CGFloat = 12.0
 
     public init(labelText: String="", placeholder: String="", value: StringValue) {
         self.labelText = labelText
