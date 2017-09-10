@@ -21,6 +21,9 @@ public class ButtonActionCell: MacaronCell, MacaronCellType {
         if let data = data as? ButtonActionCellData {
             action = data.action
             button.isEnabled = data.enable.value
+            data.enable.onSet = {
+                self.button.isEnabled = $0
+            }
 
             button.setTitle(data.text, for: .normal)
             button.setTitleColor(data.normalTextColor, for: .normal)
