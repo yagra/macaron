@@ -13,7 +13,7 @@ public protocol MacaronCellDataType {
 }
 
 public extension MacaronCellDataType {
-    public func `$`(_ handler: (Self) -> Void) -> Self {
+    public func handle(_ handler: (Self) -> Void) -> Self {
         handler(self)
         return self
     }
