@@ -9,6 +9,8 @@
 import UIKit
 
 public class TextCell: MacaronCell, MacaronCellType {
+    @IBOutlet weak var topSpaceConstraint: NSLayoutConstraint!
+    @IBOutlet weak var bottomSpaceConstraint: NSLayoutConstraint!
     private var height: CGFloat = 50.0
     @IBOutlet weak var label: UILabel!
     
@@ -22,8 +24,10 @@ public class TextCell: MacaronCell, MacaronCellType {
             label.textColor = data.textColor
             label.font ??= data.font
             label.sizeToFit()
+            topSpaceConstraint.constant = data.topSpace
+            bottomSpaceConstraint.constant = data.bottomSpace
             contentView.backgroundColor = data.backgroundColor
-            height = label.frame.height
+            height = label.frame.height + data.topSpace + data.bottomSpace
         }
     }
 }
@@ -33,6 +37,8 @@ public class TextCellData: MacaronCellData<TextCell> {
     public var textColor: UIColor = .black
     public var font: UIFont?
     public var backgroundColor: UIColor = .white
+    public var topSpace: CGFloat = 0
+    public var bottomSpace: CGFloat = 0
 
     public init(text: String) {
         self.text = text
