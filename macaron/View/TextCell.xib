@@ -35,6 +35,8 @@
             <connections>
                 <outlet property="bottomSpaceConstraint" destination="4Qa-sK-E5c" id="Ou6-XD-79e"/>
                 <outlet property="label" destination="msh-Ge-gjk" id="k6R-Mn-pQg"/>
+                <outlet property="leftSpaceConstraint" destination="UzS-ka-sEK" id="9Hs-DV-ix5"/>
+                <outlet property="rightSpaceConstraint" destination="c3Z-8h-xbK" id="D3f-TN-cBt"/>
                 <outlet property="topSpaceConstraint" destination="hKc-5b-EBt" id="1y5-rm-XjP"/>
             </connections>
             <point key="canvasLocation" x="4" y="41"/>
