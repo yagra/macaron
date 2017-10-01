@@ -18,12 +18,14 @@ public class BlankCell: MacaronCell, MacaronCellType {
     public func assign(data: inout MacaronCellDataType) {
         if let data = data as? BlankCellData {
             height = data.height
+            backgroundColor = data.backgroundColor
         }
     }
 }
 
 public class BlankCellData: MacaronCellData<BlankCell> {
     public var height: CGFloat
+    public var backgroundColor = UIColor.clear
 
     public init(height: CGFloat) {
         self.height = height
