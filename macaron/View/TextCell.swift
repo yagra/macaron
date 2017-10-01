@@ -30,7 +30,7 @@ public class TextCell: MacaronCell, MacaronCellType {
             bottomSpaceConstraint.constant = data.bottomSpace
             leftSpaceConstraint.constant = data.leftSpace
             rightSpaceConstraint.constant = data.rightSpace
-            contentView.backgroundColor = data.backgroundColor
+            backgroundColor = data.backgroundColor
             height = label.frame.height + data.topSpace + data.bottomSpace
         }
     }
