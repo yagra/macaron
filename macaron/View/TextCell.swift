@@ -25,6 +25,7 @@ public class TextCell: MacaronCell, MacaronCellType {
             label.text = data.text
             label.textColor = data.textColor
             label.font ??= data.font
+            label.numberOfLines = data.numberOfLines
             label.sizeToFit()
             topSpaceConstraint.constant = data.topSpace
             bottomSpaceConstraint.constant = data.bottomSpace
@@ -45,8 +46,10 @@ public class TextCellData: MacaronCellData<TextCell> {
     public var bottomSpace: CGFloat = 0
     public var leftSpace: CGFloat = 12
     public var rightSpace: CGFloat = 12
+    public var numberOfLines: Int
 
-    public init(text: String) {
+    public init(text: String, numberOfLines: Int=1) {
         self.text = text
+        self.numberOfLines = numberOfLines
     }
 }
