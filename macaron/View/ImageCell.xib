@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="375" id="rqr-Z8-cIT" customClass="ImageCell" customModule="macaron" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rqr-Z8-cIT" id="oad-7u-PP2">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="374.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cn3-AJ-1df">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="374.5"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="cn3-AJ-1df" secondAttribute="trailing" id="IAF-GL-ru9"/>
+                    <constraint firstAttribute="bottom" secondItem="cn3-AJ-1df" secondAttribute="bottom" id="IzE-yK-6dl"/>
+                    <constraint firstItem="cn3-AJ-1df" firstAttribute="top" secondItem="oad-7u-PP2" secondAttribute="top" id="LEN-Nx-e7h"/>
+                    <constraint firstItem="cn3-AJ-1df" firstAttribute="leading" secondItem="oad-7u-PP2" secondAttribute="leading" id="bhK-u9-ZsI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bottomSpaceConstraint" destination="IzE-yK-6dl" id="JBl-Eh-JMM"/>
+                <outlet property="contentImageView" destination="cn3-AJ-1df" id="TSM-eU-iN6"/>
+                <outlet property="leftSpaceConstraint" destination="bhK-u9-ZsI" id="gDx-hI-eNv"/>
+                <outlet property="rightSpaceConstraint" destination="IAF-GL-ru9" id="4wH-8W-Mh2"/>
+                <outlet property="topSpaceConstraint" destination="LEN-Nx-e7h" id="va2-PS-c0i"/>
+            </connections>
+            <point key="canvasLocation" x="8" y="28"/>
+        </tableViewCell>
+    </objects>
+</document>

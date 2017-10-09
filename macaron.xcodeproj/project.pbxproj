@@ -25,6 +25,8 @@
 		775DB6631F51580C00AEC8A9 /* macaron.h in Headers */ = {isa = PBXBuildFile; fileRef = 775DB6551F51580C00AEC8A9 /* macaron.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		775DB67E1F515A1900AEC8A9 /* StringInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775DB67D1F515A1900AEC8A9 /* StringInputCell.swift */; };
 		775DB6801F515A8F00AEC8A9 /* MacaronViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775DB67F1F515A8F00AEC8A9 /* MacaronViewController.swift */; };
+		77A8090D1F8B7ED200C3BED1 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A8090C1F8B7ED200C3BED1 /* ImageCell.swift */; };
+		77A8090F1F8B7EDC00C3BED1 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77A8090E1F8B7EDB00C3BED1 /* ImageCell.xib */; };
 		77D98A5C1F51648300E2943B /* StringInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77D98A5B1F51648300E2943B /* StringInputCell.xib */; };
 		77D98A621F51701300E2943B /* MacaronCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D98A611F51701300E2943B /* MacaronCell.swift */; };
 		77D98A651F51710C00E2943B /* MacaronCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D98A641F51710C00E2943B /* MacaronCellData.swift */; };
@@ -63,6 +65,8 @@
 		775DB6621F51580C00AEC8A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		775DB67D1F515A1900AEC8A9 /* StringInputCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringInputCell.swift; sourceTree = "<group>"; };
 		775DB67F1F515A8F00AEC8A9 /* MacaronViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacaronViewController.swift; sourceTree = "<group>"; };
+		77A8090C1F8B7ED200C3BED1 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		77A8090E1F8B7EDB00C3BED1 /* ImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
 		77D98A5B1F51648300E2943B /* StringInputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StringInputCell.xib; sourceTree = "<group>"; };
 		77D98A611F51701300E2943B /* MacaronCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacaronCell.swift; sourceTree = "<group>"; };
 		77D98A641F51710C00E2943B /* MacaronCellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacaronCellData.swift; sourceTree = "<group>"; };
@@ -147,6 +151,8 @@
 				774599B41F52F92C001DB2E8 /* ButtonActionCell.xib */,
 				77495D4B1F5A986000AB54AE /* SwitchCell.swift */,
 				77495D491F5A985600AB54AE /* SwitchCell.xib */,
+				77A8090C1F8B7ED200C3BED1 /* ImageCell.swift */,
+				77A8090E1F8B7EDB00C3BED1 /* ImageCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -250,6 +256,7 @@
 			files = (
 				77495D4E1F5A9D5500AB54AE /* BlankCell.xib in Resources */,
 				774599AD1F52AEDB001DB2E8 /* LineCell.xib in Resources */,
+				77A8090F1F8B7EDC00C3BED1 /* ImageCell.xib in Resources */,
 				774599AB1F52AC23001DB2E8 /* TextCell.xib in Resources */,
 				77D98A5C1F51648300E2943B /* StringInputCell.xib in Resources */,
 				77495D4A1F5A985600AB54AE /* SwitchCell.xib in Resources */,
@@ -276,6 +283,7 @@
 				77495D501F5A9D6000AB54AE /* BlankCell.swift in Sources */,
 				775DB6801F515A8F00AEC8A9 /* MacaronViewController.swift in Sources */,
 				77495D481F5A8D7500AB54AE /* UIColor+.swift in Sources */,
+				77A8090D1F8B7ED200C3BED1 /* ImageCell.swift in Sources */,
 				774599B11F52DB38001DB2E8 /* MacaronValue.swift in Sources */,
 				77D98A691F517A3C00E2943B /* Config.swift in Sources */,
 				774599A91F52AC18001DB2E8 /* TextCell.swift in Sources */,
