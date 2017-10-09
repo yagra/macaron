@@ -1,24 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="1" id="WND-dV-vXk" customClass="LineCell" customModule="macaron" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="5" id="WND-dV-vXk" customClass="LineCell" customModule="macaron" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="5"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WND-dV-vXk" id="Xk7-Pw-Py8">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="0.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="4.5"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NDd-sk-tuR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="4.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="NDd-sk-tuR" secondAttribute="trailing" id="CFe-3M-7SL"/>
+                    <constraint firstItem="NDd-sk-tuR" firstAttribute="top" secondItem="Xk7-Pw-Py8" secondAttribute="top" id="Pbc-Lj-06u"/>
+                    <constraint firstItem="NDd-sk-tuR" firstAttribute="leading" secondItem="Xk7-Pw-Py8" secondAttribute="leading" id="fPJ-dt-w2W"/>
+                    <constraint firstAttribute="bottom" secondItem="NDd-sk-tuR" secondAttribute="bottom" id="rKn-dM-Qua"/>
+                </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="36" y="55"/>
+            <connections>
+                <outlet property="bodyView" destination="NDd-sk-tuR" id="ciO-lj-UVt"/>
+                <outlet property="leftSpaceConstraint" destination="fPJ-dt-w2W" id="axk-WZ-7gq"/>
+                <outlet property="rightSpaceConstraint" destination="CFe-3M-7SL" id="EcW-H5-KyK"/>
+            </connections>
+            <point key="canvasLocation" x="40" y="54"/>
         </tableViewCell>
     </objects>
 </document>
