@@ -27,6 +27,7 @@ public class TextCell: MacaronCell, MacaronCellType {
             label.font ??= data.font
             label.numberOfLines = data.numberOfLines
             label.sizeToFit()
+            label.textAlignment = data.labelTextAlignment
             topSpaceConstraint.constant = data.topSpace
             bottomSpaceConstraint.constant = data.bottomSpace
             leftSpaceConstraint.constant = data.leftSpace
@@ -47,6 +48,7 @@ public class TextCellData: MacaronCellData<TextCell> {
     public var leftSpace: CGFloat = 12
     public var rightSpace: CGFloat = 12
     public var numberOfLines: Int
+    public var labelTextAlignment: NSTextAlignment = .left
 
     public init(text: String, numberOfLines: Int=1) {
         self.text = text
