@@ -26,6 +26,7 @@ open class MacaronViewController: UIViewController, UITableViewDelegate, UITable
             }
             tableView.register(UINib(nibName: cell, bundle: bundle), forCellReuseIdentifier: cell)
         }
+        tableView.reloadData()
     }
 
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
