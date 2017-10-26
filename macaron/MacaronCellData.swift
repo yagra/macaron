@@ -12,11 +12,17 @@ public protocol MacaronCellDataType {
     var CellClassName: String { get }
 }
 
-public extension MacaronCellDataType {
-    public func handle(_ handler: (Self) -> Void) -> Self {
-        handler(self)
-        return self
-    }
+
+precedencegroup HandlingCondition {
+    associativity: left
+    higherThan: AssignmentPrecedence
+    lowerThan: TernaryPrecedence
+}
+
+infix operator <!: HandlingCondition
+public func <! <D>(d: D, handler: (D) -> Void) -> D where D: MacaronCellDataType {
+    handler(d)
+    return d
 }
 
 open class MacaronCellData<Cell: MacaronCellType>: MacaronCellDataType {
