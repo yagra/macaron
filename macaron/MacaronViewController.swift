@@ -12,21 +12,30 @@ open class MacaronViewController: UIViewController, UITableViewDelegate, UITable
     private var macaronTableView: UITableView!
     private var macaronCellData: [MacaronCellDataType] = []
     private var cellHeight: [CGFloat] = []
+    private var registeredCell = [String]()
 
     public func initialize(tableView: UITableView, cellData: [MacaronCellDataType]) {
         macaronTableView = tableView
         macaronTableView.delegate = self
         macaronTableView.dataSource = self
+        reloadData(cellData: cellData)
+    }
+
+    public func reloadData(cellData: [MacaronCellDataType]) {
         macaronCellData = cellData
         cellHeight = [CGFloat](repeating: 0.0, count: cellData.count)
         for cell in Set(cellData.map{$0.CellClassName}) {
+            if registeredCell.contains(cell) {
+                continue
+            }
+            registeredCell.append(cell)
             var bundle = Bundle.main
             if let _ = Config.MacaronBundle.path(forResource: cell, ofType: "nib") {
                 bundle = Config.MacaronBundle
             }
-            tableView.register(UINib(nibName: cell, bundle: bundle), forCellReuseIdentifier: cell)
+            macaronTableView.register(UINib(nibName: cell, bundle: bundle), forCellReuseIdentifier: cell)
         }
-        tableView.reloadData()
+        macaronTableView.reloadData()
     }
 
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
